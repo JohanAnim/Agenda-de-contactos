@@ -13,7 +13,7 @@ if (isset($_POST['usuario'])) {
 			header("Location: registro-form.php?error=usuario");
 			// comprovar que las contraseñas coinciden
 		} else if ($_POST['pass'] != $_POST['pass2']) {
-			header("Location: registro-form.php?error=pas	s");
+			header("Location: registro-form.php?error=pass");
 		} else {
 			// crear la cuenta
 			$sql = "INSERT INTO usuarios (user, pass) VALUES ('" . $_POST['usuario'] . "', '" . $_POST['pass'] . "')";

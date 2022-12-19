@@ -21,8 +21,7 @@
 		$sql = "SELECT * FROM $tabla WHERE id = " . $_POST['editar'];
 		// comprobar si se ha editado el contacto de la tabla del usuario
 		if ($resultado = mysqli_query($conexion, $sql)) {
-			// mostrar un alerta de que el contacto se ha editado
-			// echo "El contacto se a editado correctamente. Pulse aseptar para continuar.";
+			// echo "El contacto se a editado correctamente.";
 			// optener los datos del contacto
 			$contacto = mysqli_fetch_assoc($resultado);
 		} else {

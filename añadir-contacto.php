@@ -13,8 +13,7 @@ if (isset($_POST['usuario'])) {
 	$sql = "INSERT INTO $tabla (nombre, apellido, numero, email) VALUES ('" . $_POST['nombre'] . "', '" . $_POST['apellido'] . "', '" . $_POST['numero'] . "', '" . $_POST['email'] . "')";
 	// comprobar si se ha añadido el contacto a la tabla del usuario
 	if (mysqli_query($conexion, $sql)) {
-		// mostrar un alerta de que el contacto se ha añadido
-		echo "El contacto se a añadido correctamente. Pulse aseptar para continuar.";
+		echo "El contacto se a añadido correctamente.";
 	} else {
 		echo "Error: " . $sql . "<br>" . mysqli_error($conexion);
 	}

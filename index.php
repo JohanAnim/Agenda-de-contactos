@@ -129,9 +129,9 @@
 			// Si hay contactos mostrar la tabla con los contactos
 			if (mysqli_num_rows($resultado) > 0) {
 				?>
-				<p class="text-center mt-3">Tienes en total <?php echo mysqli_num_rows($resultado); ?> contactos</p>
+				<p class="text-center mt-3" tabindex="0">Tienes en total <?php echo mysqli_num_rows($resultado); ?> contactos</p>
 				</section>
-				<div class="container" id="ajenda" role="region" aria-label="Agenda de contactos">
+				<div class="container" id="ajenda" role="toolbar" aria-label="Agenda" aria-roledescription="Barra de contactos">
 				<table class="table table-striped table-hover mt-3" id="tabla_contactos">
 					<thead>
 						<tr>
@@ -207,7 +207,7 @@
 
 	<!-- ahora el pie de página -->
 	<footer class="bg-dark text-white text-center p-3">
-		&copy; 2022 - Johan G
+		&copy; 2022 - Johan Antonio G
 	</footer>
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
